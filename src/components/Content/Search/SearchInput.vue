@@ -2,7 +2,7 @@
     <div class="input">
         <input v-model="inputValue" placeholder="отредактируй меня">
         <button>Search</button>
-        <p>Введённое сообщение: {{ inputValue }}</p>
+<!--        <p>Введённое сообщение: {{ inputValue }}</p>-->
     </div>
 </template>
 
@@ -18,19 +18,18 @@
 </script>
 
 <style scoped>
-.input {
-    position: absolute;
-    right: 0;
-    width: 77%;
-    height: 30px;
-    padding: 0 10px;
-}
+    .input {
+        display: flex;
+        height: 30px;
+        padding-bottom: 50px;
+    }
     input {
-        width: 80%;
+        flex-basis: 80%;
+        display: block;
         height: inherit;
     }
     button {
-        width: 10%;
+        flex: 1;
         height: 36px;
     }
 </style>

@@ -1,18 +1,18 @@
 <template>
     <div class="main">
-        <SearchInput/>
+        <MainContent/>
         <MainNavigation/>
     </div>
 </template>
 
 <script>
-    import SearchInput from './Search/SearchInput.vue'
     import MainNavigation from './NavBar/MainNavigation.vue'
+    import MainContent from "./Content/MainContent";
 
     export default {
         name: "MainPage",
         components: {
-            SearchInput,
+            MainContent,
             MainNavigation
         },
         props: {}

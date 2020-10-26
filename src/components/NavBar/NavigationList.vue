@@ -18,4 +18,7 @@
         list-style-type: none;
         padding: 0;
     }
+    li {
+        padding-top: 20px;
+    }
 </style>

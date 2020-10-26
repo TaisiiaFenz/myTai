@@ -22,6 +22,9 @@
 
 <style scoped>
 .navigation {
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
     width: 23%;
 }
 </style>

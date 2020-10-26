@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+<!--    <div id="nav">-->
+<!--      <router-link to="/">Home</router-link> |-->
+<!--      <router-link to="/about">About</router-link>-->
+<!--    </div>-->
+<!--    <router-view />-->
+<!--    <img alt="Vue logo" src="./assets/logo.png">-->
+    <MainPage/>
   </div>
 </template>
+
+<script>
+  //import HelloWorld from './components/HelloWorld.vue'
+  import MainPage from './components/MainPage.vue'
+
+  export default {
+    name: 'App',
+    components: {
+        MainPage
+    }
+  }
+</script>
 
 <style>
 #app {
@@ -17,16 +31,16 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
+/*#nav {*/
+/*  padding: 30px;*/
+/*}*/
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+/*#nav a {*/
+/*  font-weight: bold;*/
+/*  color: #2c3e50;*/
+/*}*/
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+/*#nav a.router-link-exact-active {*/
+/*  color: #42b983;*/
+/*}*/
 </style>

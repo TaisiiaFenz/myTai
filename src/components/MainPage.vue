@@ -1,32 +1,34 @@
 <template>
-    <div class="hello">
-        <h3>Installed CLI Plugins</h3>
-        <h3>Essential Links</h3>
-        <h3>Ecosystem</h3>
+    <div class="main">
+        <SearchInput/>
+        <MainNavigation/>
     </div>
 </template>
 
 <script>
+    import SearchInput from './Search/SearchInput.vue'
+    import MainNavigation from './NavBar/MainNavigation.vue'
+
     export default {
         name: "MainPage",
+        components: {
+            SearchInput,
+            MainNavigation
+        },
         props: {}
     };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .main {
+        padding-top: 10px;
+    }
     h3 {
-        margin: 40px 0 0;
+        margin: 40px;
     }
     ul {
         list-style-type: none;
         padding: 0;
-    }
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    a {
-        color: #42b983;
     }
 </style>

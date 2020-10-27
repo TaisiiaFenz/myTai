@@ -3,7 +3,7 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   state: {
     folders: [
       {
@@ -44,9 +44,20 @@ export default new Vuex.Store({
     ]
   },
   getters: {
-
+    getTodoById: (state) => (id) => {
+      return state.files.filter(file => file.name === id);
+    }
+    // getTodoById: (state) => {
+    //   return state.files.length;
+    // }
   },
-  mutations: {},
+  mutations: {
+    getTodoById2: (state) =>  {
+      state.files.filter(file => file.name === 'ipsum');
+    }
+  },
   actions: {},
   modules: {}
 });
+
+export default store;

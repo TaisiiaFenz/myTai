@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <Folders/>
-    <Files/>
+    <Folders />
+    <Files />
   </div>
 </template>
 

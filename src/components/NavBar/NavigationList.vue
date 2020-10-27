@@ -1,7 +1,7 @@
 <template>
   <ul>
-    <li><router-link to="/">Home</router-link></li>
-    <li><router-link to="/Folders">Folders</router-link></li>
+    <li><router-link to="/Home">Home</router-link></li>
+    <li><router-link to="/">Folders</router-link></li>
     <li>Photos</li>
     <li>Documents</li>
   </ul>

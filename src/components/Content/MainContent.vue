@@ -1,30 +1,24 @@
 <template>
-    <div class="main">
-        <SearchInput/>
-        <Folders/>
-        <Files/>
-    </div>
+  <div class="main">
+    <SearchInput />
+    <router-view />
+  </div>
 </template>
 
 <script>
-
-    import SearchInput from "./Search/SearchInput";
-    import Folders from "../../views/Folders";
-    import Files from "../../views/Files";
-    export default {
-        name: "MainContent",
-        components: {
-            Files,
-            Folders,
-            SearchInput
-        }
-    }
+import SearchInput from "./Search/SearchInput";
+export default {
+  name: "MainContent",
+  components: {
+    SearchInput
+  }
+};
 </script>
 
 <style scoped>
 .main {
-    position: absolute;
-    right: 5%;
-    width: 77%;
+  position: absolute;
+  right: 5%;
+  width: 77%;
 }
 </style>

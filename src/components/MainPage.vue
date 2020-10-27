@@ -1,34 +1,34 @@
 <template>
-    <div class="main">
-        <MainContent/>
-        <MainNavigation/>
-    </div>
+  <div class="main">
+    <MainContent />
+    <MainNavigation />
+  </div>
 </template>
 
 <script>
-    import MainNavigation from './NavBar/MainNavigation.vue'
-    import MainContent from "./Content/MainContent";
+import MainNavigation from "./NavBar/MainNavigation.vue";
+import MainContent from "./Content/MainContent";
 
-    export default {
-        name: "MainPage",
-        components: {
-            MainContent,
-            MainNavigation
-        },
-        props: {}
-    };
+export default {
+  name: "MainPage",
+  components: {
+    MainContent,
+    MainNavigation
+  },
+  props: {}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .main {
-        padding-top: 10px;
-    }
-    h3 {
-        margin: 40px;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
+.main {
+  padding-top: 10px;
+}
+h3 {
+  margin: 40px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 </style>

@@ -1,13 +1,11 @@
 <template>
-    <button>Add new</button>
+  <button>Add new</button>
 </template>
 
 <script>
-    export default {
-        name: "AddNewFileButton"
-    }
+export default {
+  name: "AddNewFileButton"
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

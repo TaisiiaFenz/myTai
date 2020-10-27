@@ -1,25 +1,25 @@
 <template>
   <div id="app">
-<!--    <div id="nav">-->
-<!--      <router-link to="/">Home</router-link> |-->
-<!--      <router-link to="/about">About</router-link>-->
-<!--    </div>-->
-<!--    <router-view />-->
-<!--    <img alt="Vue logo" src="./assets/logo.png">-->
-    <MainPage/>
+<!--        <div id="nav">-->
+<!--          <router-link to="/">Home</router-link> |-->
+<!--          <router-link to="/about">About</router-link>-->
+<!--        </div>-->
+<!--        <router-view />-->
+<!--        <img alt="Vue logo" src="./assets/logo.png">-->
+    <MainPage />
   </div>
 </template>
 
 <script>
-  //import HelloWorld from './components/HelloWorld.vue'
-  import MainPage from './components/MainPage.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import MainPage from "./components/MainPage.vue";
 
-  export default {
-    name: 'App',
-    components: {
-        MainPage
-    }
+export default {
+  name: "App",
+  components: {
+    MainPage
   }
+};
 </script>
 
 <style>

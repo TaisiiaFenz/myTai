@@ -1,13 +1,11 @@
 <template>
-    <div>Tai.</div>
+  <div>Tai.</div>
 </template>
 
 <script>
-    export default {
-        name: "Logo"
-    }
+export default {
+  name: "Logo"
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

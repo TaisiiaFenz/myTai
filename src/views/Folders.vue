@@ -7,29 +7,16 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
+
 export default {
   name: "Folders",
   data: function() {
-    return {
-      folders: [
-        {
-          iconSrc: "",
-          name: "Lorem",
-          id: 1
-        },
-        {
-          iconSrc: "",
-          name: "ipsum",
-          id: 2
-        },
-        {
-          iconSrc: "",
-          name: "dolar",
-          id: 3
-        }
-      ]
-    };
-  }
+    return {}
+  },
+  computed: mapState([
+    'folders'
+  ])
 };
 </script>
 

@@ -13,33 +13,16 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
 import FileCard from "./FileCard";
 export default {
   name: "Files",
   data: function() {
-    return {
-      files: [
-        {
-          iconSrc: "",
-          imgSrc: "",
-          name: "Lorem",
-          id: 1
-        },
-        {
-          iconSrc: "",
-          imgSrc: "",
-          name: "ipsum",
-          id: 2
-        },
-        {
-          iconSrc: "",
-          imgSrc: "",
-          name: "dolar",
-          id: 3
-        }
-      ]
-    };
+    return {};
   },
+  computed: mapState([
+    'files'
+  ]),
   components: {
     FileCard
   }

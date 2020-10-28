@@ -1,8 +1,7 @@
 <template>
   <div class="input">
-    <input v-model="inputValue" placeholder="отредактируй меня" />
+    <input v-model="inputValue" placeholder="Search" />
     <button v-on:click="unSearch2">X</button>
-    <p>Введённое сообщение: {{ inputValue }}</p>
   </div>
 </template>
 
@@ -43,16 +42,32 @@ export default {
 <style scoped>
 .input {
   display: flex;
-  height: 30px;
+  height: 40px;
   padding-bottom: 50px;
 }
 input {
-  flex-basis: 80%;
+  flex-basis: 90%;
   display: block;
   height: inherit;
+  background-color: #E9F2F4;
+  border: none;
+  border-radius: 3px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
 }
 button {
   flex: 1;
-  height: 36px;
+  height: 42px;
+  background-color: #006C8E;
+  color: #E9F2F4;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
 }
+  button:focus {
+    outline: none;
+  }
 </style>

@@ -2,18 +2,18 @@
   <div class="navigation">
     <Logo />
     <NavigationList />
-    <AddNewFileButton />
+    <UpLoadFile/>
   </div>
 </template>
 
 <script>
 import Logo from "./Logo.vue";
 import NavigationList from "./NavigationList";
-import AddNewFileButton from "./AddNewFileButton";
+import UpLoadFile from "./UpLoadFile";
 export default {
   name: "MainNavigation",
   components: {
-    AddNewFileButton,
+    UpLoadFile,
     NavigationList,
     Logo
   }

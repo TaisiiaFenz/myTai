@@ -1,5 +1,7 @@
 <template>
-  <div>Tai.</div>
+  <div class="logo">
+    Tai<span>.</span>
+  </div>
 </template>
 
 <script>
@@ -8,4 +10,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .logo {
+    font-size: 35px;
+  }
+  .logo span {
+    color: #006C8E;
+    font-size: 50px;
+  }
+</style>

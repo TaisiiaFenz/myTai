@@ -26,7 +26,7 @@ export default {
   position: relative;
   height: 250px;
   padding: 10px 10px 20px;
-  border: 1px solid #000;
+  box-shadow: 0 0 30px rgba(0,0,0,0.08);
 }
 .card_img {
   height: 200px;

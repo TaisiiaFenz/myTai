@@ -1,26 +1,24 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Folders from "../views/Folders.vue";
-import Photos from "../views/Photos";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/home",
-    name: "Home",
+    path: "/",
+    name: "home",
     component: Home
   },
   {
     path: "/folders",
-    name: "Folders",
-    component: Folders
+    name: "folders",
+    component: () => import("../views/Folders")
   },
   {
     path: "/photos",
-    name: "Photos",
-    component: Photos
+    name: "photos",
+    component: () => import("../views/Photos")
   }
 ];
 

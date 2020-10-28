@@ -1,9 +1,9 @@
 <template>
   <ul>
-    <li><router-link to="/Home">Home</router-link></li>
-    <li><router-link to="/Folders">Folders</router-link></li>
-    <li><router-link to="/Photos">Photos</router-link></li>
-    <li>Documents</li>
+    <li><router-link to="/" class="link">Home</router-link></li>
+    <li><router-link to="/folders" class="link">Folders</router-link></li>
+    <li><router-link to="/photos" class="link">Photos</router-link></li>
+    <li class="link">Documents</li>
   </ul>
 </template>
 
@@ -21,4 +21,10 @@ ul {
 li {
   padding-top: 20px;
 }
+  .link {
+    text-decoration: none;
+    color: #006C8E;
+    font-weight: bold;
+    font-size: 18px;
+  }
 </style>

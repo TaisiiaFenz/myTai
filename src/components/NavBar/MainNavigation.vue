@@ -2,18 +2,18 @@
   <div class="navigation">
     <Logo />
     <NavigationList />
-    <AddNewFileButton />
+    <UpLoadFile/>
   </div>
 </template>
 
 <script>
 import Logo from "./Logo.vue";
 import NavigationList from "./NavigationList";
-import AddNewFileButton from "./AddNewFileButton";
+import UpLoadFile from "./UpLoadFile";
 export default {
   name: "MainNavigation",
   components: {
-    AddNewFileButton,
+    UpLoadFile,
     NavigationList,
     Logo
   }
@@ -24,7 +24,10 @@ export default {
 .navigation {
   position: absolute;
   left: 0;
-  padding-left: 20px;
-  width: 23%;
+  width: 13%;
+  height: 98vh;
+  padding-left: 30px;
+  background-color: #E9F2F4;
+  border-radius: 3px;
 }
 </style>

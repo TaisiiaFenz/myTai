@@ -7,7 +7,6 @@
       :iconSrc="file.iconSrc"
       :imgSrc="file.imgSrc"
     >
-<!--      {{ file.name }}-->
     </FileCard>
   </div>
 </template>

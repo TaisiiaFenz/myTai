@@ -72,6 +72,9 @@ const store = new Vuex.Store({
     getTodoById2(state, str) {
       const result = state.files.filter(file => file.name.toLowerCase().indexOf(str) === 0);
       state.files = result;
+    },
+    unSearch(state) {
+      state.files = state.reservedFiles;
     }
   },
   actions: {},

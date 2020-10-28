@@ -1,9 +1,8 @@
 <template>
   <div class="input">
     <input v-model="inputValue" placeholder="отредактируй меня" />
-    <button>Search</button>
+    <button v-on:click="unSearch2">X</button>
     <p>Введённое сообщение: {{ inputValue }}</p>
-    <!--    <p>Test {{getTodoById2('ipsum') }}</p>-->
   </div>
 </template>
 
@@ -20,14 +19,22 @@ export default {
   computed: mapState([
           'files'
   ]),
-  methods: mapMutations({
-    getTodoById2: 'getTodoById2'
+  methods: {
+    ...mapMutations({
+    getTodoById2: 'getTodoById2',
+    unSearch: 'unSearch'
   }),
+    unSearch2() {
+      console.log("gutten tag");
+      this.inputValue = "";
+      this.['unSearch']();
+    }
+  },
   watch: {
     inputValue() {
       console.log(this.$store);
       this.$store.commit('getTodoById2', this.inputValue);
-      this.['getTodoById2'](this.inputValue);
+      //this.['getTodoById2'](this.inputValue);
     }
   }
 };

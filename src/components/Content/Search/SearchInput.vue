@@ -2,17 +2,33 @@
   <div class="input">
     <input v-model="inputValue" placeholder="отредактируй меня" />
     <button>Search</button>
-    <!--        <p>Введённое сообщение: {{ inputValue }}</p>-->
+    <p>Введённое сообщение: {{ inputValue }}</p>
+    <!--    <p>Test {{getTodoById2('ipsum') }}</p>-->
   </div>
 </template>
 
 <script>
+  import { mapMutations, mapState } from 'vuex';
+
 export default {
   name: "SearchInput",
-  data: function() {
+  data() {
     return {
       inputValue: ""
     };
+  },
+  computed: mapState([
+          'files'
+  ]),
+  methods: mapMutations({
+    getTodoById2: 'getTodoById2'
+  }),
+  watch: {
+    inputValue() {
+      console.log(this.$store);
+      this.$store.commit('getTodoById2', this.inputValue);
+      this.['getTodoById2'](this.inputValue);
+    }
   }
 };
 </script>

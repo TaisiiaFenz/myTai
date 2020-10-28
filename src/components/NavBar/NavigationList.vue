@@ -1,8 +1,8 @@
 <template>
   <ul>
     <li><router-link to="/Home">Home</router-link></li>
-    <li><router-link to="/">Folders</router-link></li>
-    <li>Photos</li>
+    <li><router-link to="/Folders">Folders</router-link></li>
+    <li><router-link to="/Photos">Photos</router-link></li>
     <li>Documents</li>
   </ul>
 </template>

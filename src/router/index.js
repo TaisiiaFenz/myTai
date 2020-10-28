@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Folders from "../views/Folders.vue";
+import Photos from "../views/Photos";
 
 Vue.use(VueRouter);
 
@@ -12,9 +13,14 @@ const routes = [
     component: Home
   },
   {
-    path: "/",
+    path: "/folders",
     name: "Folders",
     component: Folders
+  },
+  {
+    path: "/photos",
+    name: "Photos",
+    component: Photos
   }
 ];
 

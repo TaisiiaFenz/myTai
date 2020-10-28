@@ -7,16 +7,14 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex';
+import { mapState } from "vuex";
 
 export default {
   name: "Folders",
   data: function() {
-    return {}
+    return {};
   },
-  computed: mapState([
-    'folders'
-  ])
+  computed: mapState(["folders"])
 };
 </script>
 

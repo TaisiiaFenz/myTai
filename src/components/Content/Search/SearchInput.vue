@@ -3,18 +3,16 @@
     <input v-model="inputValue" placeholder="отредактируй меня" />
     <button>Search</button>
     <p>Введённое сообщение: {{ inputValue }}</p>
-<!--    <p>Test {{getTodoById2('ipsum') }}</p>-->
+    <!--    <p>Test {{getTodoById2('ipsum') }}</p>-->
   </div>
 </template>
 
 <script>
   import { mapMutations, mapState } from 'vuex';
-  import store from 'vuex'
 
 export default {
   name: "SearchInput",
-  store,
-  data: function() {
+  data() {
     return {
       inputValue: ""
     };
@@ -22,15 +20,14 @@ export default {
   computed: mapState([
           'files'
   ]),
-  methods: mapMutations([
-    'getTodoById2'
-  ]),
+  methods: mapMutations({
+    getTodoById2: 'getTodoById2'
+  }),
   watch: {
-    inputValue: function() {
-      console.log("Hello");
-      console.log(store);
-      this.store.commit('getTodoById2');
-      //this.getTodoById2(this.inputValue);
+    inputValue() {
+      console.log(this.$store);
+      this.$store.commit('getTodoById2', this.inputValue);
+      this.['getTodoById2'](this.inputValue);
     }
   }
 };

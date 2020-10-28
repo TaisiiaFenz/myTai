@@ -1,13 +1,13 @@
 <template>
   <div class="files">
     <FileCard
-      v-for="file in files"
+      v-for="file in filterPhotos"
       :key="file.id"
       :name="file.name"
       :iconSrc="file.iconSrc"
       :imgSrc="file.imgSrc"
     >
-      {{ file.name }}
+<!--      {{ file.name }}-->
     </FileCard>
   </div>
 </template>
@@ -17,7 +17,21 @@ import { mapState } from "vuex";
 import FileCard from "./FileCard";
 export default {
   name: "Photos",
-  computed: { ...mapState(["files"]) },
+  computed: {
+    ...mapState(["files"]),
+    filterPhotos() {
+      return this.files.filter(this.checkType);
+    }
+  },
+  methods: {
+    checkType(item) {
+      const photosTypes = ['.jpeg', '.gif', '.png', '.svg'];
+      for(let type of photosTypes) {
+          if (item.name.indexOf(type) === item.name.length - type.length) return true;
+      }
+      return false;
+    }
+  },
   components: {
     FileCard
   }

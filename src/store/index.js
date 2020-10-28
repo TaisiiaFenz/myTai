@@ -38,7 +38,7 @@ const store = new Vuex.Store({
       {
         iconSrc: "",
         imgSrc: "",
-        name: "dolar",
+        name: "dolar.png",
         id: 3
       }
     ],

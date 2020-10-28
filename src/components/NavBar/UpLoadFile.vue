@@ -47,9 +47,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 200px;
-        height: 200px;
-        outline: 2px dashed #5d5d5d;
+        width: 170px;
+        height: 170px;
+        outline: 2px dashed #006C8E;
         outline-offset: -12px;
         background-color: #e0f2f7;
         font-family: 'Segoe UI';

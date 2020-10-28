@@ -27,5 +27,14 @@ button {
   width: 150px;
   height: 50px;
   margin-right: 30px;
+  border-radius: 3px;
+  background-color: #006C8E;
+  color: #E9F2F4;
+  border: none;
+ 
+  font-size: 16px;
 }
+  button:focus {
+    outline: none;
+  }
 </style>

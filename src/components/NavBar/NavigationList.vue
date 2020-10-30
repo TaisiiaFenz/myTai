@@ -21,10 +21,10 @@ ul {
 li {
   padding-top: 20px;
 }
-  .link {
-    text-decoration: none;
-    color: #006C8E;
-    font-weight: bold;
-    font-size: 18px;
-  }
+.link {
+  text-decoration: none;
+  color: #006c8e;
+  font-weight: bold;
+  font-size: 18px;
+}
 </style>

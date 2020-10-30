@@ -2,8 +2,11 @@
   <div class="card">
     <img :src="imgSrc" alt="Image" class="card_img" />
     <div class="title">
+<!--      <img src="../assets/folder.jpg" alt="Icon" />-->
+<!--      <img alt="Vue logo" v-bind:[attribute]="iconSrc" />-->
       <img :src="iconSrc" alt="Icon" />
       <!--            нужно ли здесь привязывать изображение-->
+      <p> {{ iconSrc }} </p>
       <p>{{ name }}</p>
     </div>
   </div>
@@ -26,7 +29,7 @@ export default {
   position: relative;
   height: 250px;
   padding: 10px 10px 20px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.08);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 .card_img {
   height: 200px;

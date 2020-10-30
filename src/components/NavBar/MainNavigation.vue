@@ -2,7 +2,7 @@
   <div class="navigation">
     <Logo />
     <NavigationList />
-    <UpLoadFile/>
+    <UpLoadFile />
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
   width: 13%;
   height: 98vh;
   padding-left: 30px;
-  background-color: #E9F2F4;
+  background-color: #e9f2f4;
   border-radius: 3px;
 }
 </style>

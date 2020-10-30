@@ -24,9 +24,10 @@ export default {
   },
   methods: {
     checkType(item) {
-      const photosTypes = ['.jpeg', '.gif', '.png', '.svg'];
-      for(let type of photosTypes) {
-          if (item.name.indexOf(type) === item.name.length - type.length) return true;
+      const photosTypes = [".jpeg", ".gif", ".png", ".svg", ".jpg"];
+      for (let type of photosTypes) {
+        if (item.name.indexOf(type) === item.name.length - type.length)
+          return true;
       }
       return false;
     }

@@ -49,7 +49,7 @@ input {
   flex-basis: 90%;
   display: block;
   height: inherit;
-  background-color: #E9F2F4;
+  background-color: #e9f2f4;
   border: none;
   border-radius: 3px;
   padding-left: 15px;
@@ -61,13 +61,13 @@ input:focus {
 button {
   flex: 1;
   height: 42px;
-  background-color: #006C8E;
-  color: #E9F2F4;
+  background-color: #006c8e;
+  color: #e9f2f4;
   border: none;
   border-radius: 3px;
   font-size: 20px;
 }
-  button:focus {
-    outline: none;
-  }
+button:focus {
+  outline: none;
+}
 </style>

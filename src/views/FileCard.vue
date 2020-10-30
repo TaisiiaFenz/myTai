@@ -2,11 +2,7 @@
   <div class="card">
     <img :src="imgSrc" alt="Image" class="card_img" />
     <div class="title">
-<!--      <img src="../assets/folder.jpg" alt="Icon" />-->
-<!--      <img alt="Vue logo" v-bind:[attribute]="iconSrc" />-->
       <img :src="iconSrc" alt="Icon" />
-      <!--            нужно ли здесь привязывать изображение-->
-      <p> {{ iconSrc }} </p>
       <p>{{ name }}</p>
     </div>
   </div>
@@ -15,12 +11,7 @@
 <script>
 export default {
   name: "FileCard",
-  props: ["name", "iconSrc", "imgSrc"],
-  data: function() {
-    return {
-      attribute: "src"
-    };
-  }
+  props: ["name", "iconSrc", "imgSrc"]
 };
 </script>
 
@@ -40,6 +31,8 @@ export default {
 }
 .title img {
   display: inline-block;
+    width: 20px;
+    height: 20px;
   padding-right: 20px;
 }
 .title p {

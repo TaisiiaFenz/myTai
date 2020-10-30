@@ -10,13 +10,12 @@ import SearchInput from "./Search/SearchInput";
 import { mapMutations } from "vuex";
 
 export default {
-  name: "MainContent",
+  name: 'MainContent',
   components: {
     SearchInput
   },
-  methods:mapMutations(["getFiles"]),
+  methods: mapMutations(['getFiles']),
   mounted: function() {
-    console.log("Mounted happens");
     this.['getFiles']();
   }
 };

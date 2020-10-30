@@ -14,12 +14,10 @@ export default {
   components: {
     MainContent,
     MainNavigation
-  },
-  props: {}
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main {
   padding-top: 5px;

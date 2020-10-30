@@ -1,6 +1,6 @@
 <template>
   <form id="upload-container" method="POST">
-    <img id="upload-image" src="upload.svg" />
+    <img id="upload-image" src="@/assets/upload.svg" />
     <div>
       <input
         id="file-input"
@@ -10,7 +10,6 @@
         onchange="upLoadFile"
       />
       <label for="file-input">Choose file</label>
-      <!--            <span>или перетащите его сюда</span> &ndash;&gt;-->
     </div>
   </form>
 </template>
@@ -36,17 +35,6 @@ export default {
       this.sendFiles(files);
     }
   }
-
-  // $.ajax({
-  //     url: dropZone.attr('action'),
-  //     type: dropZone.attr('method'),
-  //     data: Data,
-  //     contentType: false,
-  //     processData: false,
-  //     success: function(data) {
-  //         alert ('Файлы были успешно загружены!');
-  //     }
-  // });
 };
 </script>
 
@@ -56,17 +44,16 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 170px;
-  height: 170px;
+  width: 120px;
+  height: 120px;
   outline: 2px dashed #006c8e;
   outline-offset: -12px;
   background-color: #e0f2f7;
-  font-family: "Segoe UI";
   color: #1f3c44;
 }
 
 #upload-container img {
-  width: 40%;
+  width: 30%;
   margin-bottom: 20px;
   user-select: none;
 }
@@ -96,10 +83,5 @@ export default {
 #upload-container label.focus {
   outline: 1px solid #0078d7;
   outline: -webkit-focus-ring-color auto 5px;
-}
-
-#upload-container.dragover {
-  background-color: #fafafa;
-  outline-offset: -17px;
 }
 </style>

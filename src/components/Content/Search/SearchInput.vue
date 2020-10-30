@@ -1,42 +1,39 @@
 <template>
   <div class="input">
     <input v-model="inputValue" placeholder="Search" />
-    <button v-on:click="unSearch2">X</button>
+    <button v-on:click="unSearchButton">X</button>
   </div>
 </template>
 
 <script>
   import { mapMutations, mapState } from 'vuex';
 
-export default {
-  name: "SearchInput",
-  data() {
-    return {
-      inputValue: ""
-    };
-  },
-  computed: mapState([
-          'files'
-  ]),
-  methods: {
-    ...mapMutations({
-    getTodoById2: 'getTodoById2',
-    unSearch: 'unSearch'
-  }),
-    unSearch2() {
-      console.log("gutten tag");
-      this.inputValue = "";
-      this.['unSearch']();
+  export default {
+    name: 'SearchInput',
+    data() {
+      return {
+        inputValue: ''
+      };
+    },
+    computed: mapState([
+            'files'
+    ]),
+    methods: {
+      ...mapMutations({
+        searchByInput: 'searchByInput',
+        unSearch: 'unSearch'
+    }),
+      unSearchButton() {
+        this.inputValue = '';
+        this.['unSearch']();
+      }
+    },
+    watch: {
+      inputValue() {
+        this.$store.commit('searchByInput', this.inputValue);
+      }
     }
-  },
-  watch: {
-    inputValue() {
-      console.log(this.$store);
-      this.$store.commit('getTodoById2', this.inputValue);
-      //this.['getTodoById2'](this.inputValue);
-    }
-  }
-};
+  };
 </script>
 
 <style scoped>

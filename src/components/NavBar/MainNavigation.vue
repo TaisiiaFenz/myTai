@@ -7,17 +7,17 @@
 </template>
 
 <script>
-import Logo from "./Logo.vue";
-import NavigationList from "./NavigationList";
-import UpLoadFile from "./UpLoadFile";
-export default {
-  name: "MainNavigation",
-  components: {
-    UpLoadFile,
-    NavigationList,
-    Logo
-  }
-};
+  import Logo from "./Logo.vue";
+  import NavigationList from "./NavigationList";
+  import UpLoadFile from "./UpLoadFile";
+  export default {
+    name: "MainNavigation",
+    components: {
+      UpLoadFile,
+      NavigationList,
+      Logo
+    }
+  };
 </script>
 
 <style scoped>
